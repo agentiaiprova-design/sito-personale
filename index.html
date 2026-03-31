@@ -5,46 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuele Cerquetelli | AI & Automation Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-white text-slate-900 leading-relaxed">
 
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="font-bold text-xl tracking-tighter">S.CERQUETELLI <span class="text-green-600">.ENG</span></div>
-        <div class="space-x-6 text-sm font-medium">
-            <a href="#prodotti" class="hover:text-green-600 transition">Soluzioni</a>
-            <a href="#about" class="hover:text-green-600 transition">Esperienza</a>
-            <a href="mailto:tuamail@gmail.com" class="bg-slate-900 text-white px-4 py-2 rounded-full">Contattami</a>
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-black text-xl tracking-tighter uppercase">S. Cerquetelli <span class="text-green-600">.Eng</span></div>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-[0.2em]">
+                <a href="#soluzioni" class="hover:text-green-600 transition">Soluzioni</a>
+                <a href="#esperienza" class="hover:text-green-600 transition">Chi Sono</a>
+            </div>
+            <a href="mailto:samuelecerquetelli11@gmail.com" class="bg-slate-900 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-green-700 transition">Contattami</a>
         </div>
     </nav>
 
-    <header class="max-w-6xl mx-auto px-6 py-20 text-center md:text-left">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-green-600 font-semibold tracking-widest text-xs uppercase">AI & Sostenibilità Urbana</span>
-                <h1 class="text-5xl md:text-6xl font-bold mt-4 leading-tight">
-                    Porto l'Intelligenza Artificiale nel <span class="text-green-700">Vivaio.</span>
-                </h1>
-                <p class="text-lg text-slate-600 mt-6 leading-relaxed">
-                    Dall'esperienza in <b>Hitachi Rail</b> e la ricerca a <b>New York</b>, sviluppo automazioni sartoriali per ottimizzare logistica e turni nel settore vivaistico. 
-                </p>
-                <div class="mt-10 flex flex-col sm:row gap-4">
-                    <a href="#prodotti" class="bg-green-700 text-white px-8 py-4 rounded-lg font-bold text-center hover:bg-green-800 transition shadow-lg shadow-green-200">
-                        Vedi i Tool (Demo)
-                    </a>
-                    <a href="#sostenibilita" class="border border-slate-300 px-8 py-4 rounded-lg font-bold text-center hover:bg-slate-100 transition">
-                        Il mio Paper Scientifico
-                    </a>
-                </div>
-            </div>
-            <div class="hidden md:block bg-slate-200 aspect-video rounded-2xl shadow-inner flex items-center justify-center border-2 border-dashed border-slate-300">
-                <p class="text-slate-400 font-mono text-sm">[Immagine Demo Smart-Load qui]</p>
+    <section class="max-w-5xl mx-auto px-6 py-24 lg:py-32">
+        <div class="reveal active text-center">
+            <h1 class="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter mb-8">
+                L'AI al servizio <br><span class="text-green-600">dei vivai.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto font-medium mb-12">
+                L’evoluzione del vivaio in business high-tech: <br class="hidden md:block"> ottimizzazione, risparmio e innovazione green.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#soluzioni" class="bg-green-600 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-xl shadow-green-100 hover:bg-green-700 transition">Vedi le Demo</a>
+                <a href="#esperienza" class="bg-slate-100 text-slate-700 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-200 transition">Chi sono</a>
             </div>
         </div>
-    </header>
+    </section>
+
+    <section id="soluzioni" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-100">
+        <div class="mb-16">
+            <h2 class="text-3xl font-black uppercase tracking-tight mb-2">Soluzioni Digitali</h2>
+            <div class="h-1 w-20 bg-green-600"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="group bg-slate-50 p-10 rounded-[2rem] border border-transparent hover:border-green-500 hover:bg-white transition-all duration-500 shadow-sm">
+                <div class="text-4xl mb-6 group-hover:scale-110 transition inline-block">🚚</div>
+                <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Smart Load</h3>
+                <p class="text-slate-600 mb-8 leading-relaxed">Algoritmo di carico intelligente. Massimizza lo spazio dei camion e riduce i km percorsi, abbattendo i costi di trasporto fino al 20%.</p>
+                <a href="http://localhost:8501/" target="_blank" class="inline-block bg-white border border-slate-200 px-6 py-3 rounded-xl font-bold text-sm hover:shadow-md transition">Prova Demo →</a>
+            </div>
+
+            <div class="group bg-slate-50 p-10 rounded-[2rem] border border-transparent hover:border-green-500 hover:bg-white transition-all duration-500 shadow-sm">
+                <div class="text-4xl mb-6 group-hover:scale-110 transition inline-block">📅</div>
+                <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Pianificazione Task</h3>
+                <p class="text-slate-600 mb-8 leading-relaxed">Gestisci i turni e le attività del personale senza errori. Un'unica dashboard per il coordinamento totale del vivaio.</p>
+                <a href="#" class="inline-block bg-white border border-slate-200 px-6 py-3 rounded-xl font-bold text-sm hover:shadow-md transition">Prova Demo →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="esperienza" class="bg-slate-900 text-white py-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid lg:grid-cols-5 gap-16 items-center">
+                
+                <div class="reveal lg:col-span-3">
+                    <h2 class="text-2xl md:text-3xl font-black mb-8 leading-tight uppercase tracking-tight">
+                        Dall'Ingegneria di precisione <br>all'Innovazione Locale.
+                    </h2>
+                    <div class="space-y-6 text-slate-400 text-lg">
+                        <p>
+                            Sono <span class="text-white font-bold">Samuele Cerquetelli</span>. Il mio approccio unisce il rigore tecnico acquisito come Design Safety Engineer in <span class="text-white">Hitachi Rail</span> alla ricerca d'avanguardia condotta a <span class="text-white font-medium">New York</span>.
+                        </p>
+                        <p>
+                            Ho presentato i miei lavori sulla sostenibilità urbana alla <span class="text-white">Princeton University</span> e pubblicato su riviste scientifiche internazionali. Questa competenza è lo strumento che uso per garantire che ogni automazione sia efficiente, sicura e proiettata al futuro.
+                        </p>
+                        <p>
+                            Ho a cuore il territorio e i vivai locali. La mia esperienza mi permette di progettare soluzioni che non solo migliorano il business, ma facilitano l'accesso a <span class="text-green-500 font-bold tracking-wide">fondi e bandi regionali per l'innovazione green e digitale</span>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 flex flex-col items-center lg:items-end reveal">
+                    <div class="relative max-w-[340px] w-full">
+                        <div class="rounded-3xl overflow-hidden border-[6px] border-slate-800 shadow-2xl">
+                            <img id="gif-profilo" data-src="io1.gif" src="" alt="Samuele Cerquetelli" class="w-full object-cover aspect-square">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-24 text-center">
+        <p class="text-slate-400 font-bold uppercase text-xs tracking-widest mb-4">Parliamo del tuo prossimo progetto</p>
+        <a href="mailto:samuelecerquetelli11@gmail.com" class="text-2xl md:text-4xl font-black hover:text-green-600 transition break-all px-6">
+            samuelecerquetelli11@gmail.com
+        </a>
+        <p class="mt-16 text-xs text-slate-300 uppercase tracking-[0.3em]">© 2026 Samuele Cerquetelli Engineering</p>
+    </footer>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    let gif = reveals[i].querySelector('#gif-profilo');
+                    if(gif && gif.getAttribute('src') == "") {
+                        gif.setAttribute('src', gif.getAttribute('data-src'));
+                    }
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal();
+    </script>
 
 </body>
 </html>

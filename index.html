@@ -3,126 +3,523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuele Cerquetelli | AI & Automation Engineer</title>
+
+    <title>Vivaio Digitale | Gestionale per i vivai di Pistoia</title>
+    <meta name="description" content="Catalogo intelligente, preventivi multilingua, commissioni interne, assistente AI vocale. Tecnologia su misura per i vivai pistoiesi.">
+    <link rel="canonical" href="https://vivaio-digitale.it/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vivaio-digitale.it/">
+    <meta property="og:title" content="Vivaio Digitale | Gestionale per i vivai di Pistoia">
+    <meta property="og:description" content="Catalogo intelligente, preventivi multilingua, commissioni interne, assistente AI vocale.">
+    <meta property="og:image" content="https://vivaio-digitale.it/cover-vivaio.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vivaio Digitale | Gestionale per i vivai di Pistoia">
+    <meta name="twitter:description" content="Catalogo intelligente, preventivi multilingua, commissioni interne, assistente AI vocale.">
+    <meta name="twitter:image" content="https://vivaio-digitale.it/cover-vivaio.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-    </style>
-</head>
-<body class="bg-white text-slate-900 leading-relaxed">
-
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="font-black text-xl tracking-tighter uppercase">S. Cerquetelli <span class="text-green-600">.Eng</span></div>
-            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-[0.2em]">
-                <a href="#soluzioni" class="hover:text-green-600 transition">Soluzioni</a>
-                <a href="#esperienza" class="hover:text-green-600 transition">Chi Sono</a>
-            </div>
-            <a href="mailto:samuelecerquetelli11@gmail.com" class="bg-slate-900 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-green-700 transition">Contattami</a>
-        </div>
-    </nav>
-
-    <section class="max-w-5xl mx-auto px-6 py-24 lg:py-32">
-        <div class="reveal active text-center">
-            <h1 class="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter mb-8">
-                L'AI al servizio <br><span class="text-green-600">dei vivai.</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto font-medium mb-12">
-                L’evoluzione del vivaio in business high-tech: <br class="hidden md:block"> ottimizzazione, risparmio e innovazione green.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#soluzioni" class="bg-green-600 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-xl shadow-green-100 hover:bg-green-700 transition">Vedi le Demo</a>
-                <a href="#esperienza" class="bg-slate-100 text-slate-700 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-200 transition">Chi sono</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="soluzioni" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-100">
-        <div class="mb-16">
-            <h2 class="text-3xl font-black uppercase tracking-tight mb-2">Soluzioni Digitali</h2>
-            <div class="h-1 w-20 bg-green-600"></div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="group bg-slate-50 p-10 rounded-[2rem] border border-transparent hover:border-green-500 hover:bg-white transition-all duration-500 shadow-sm">
-                <div class="text-4xl mb-6 group-hover:scale-110 transition inline-block">🚚</div>
-                <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Smart Load</h3>
-                <p class="text-slate-600 mb-8 leading-relaxed">Algoritmo di carico intelligente. Massimizza lo spazio dei camion e riduce i km percorsi, abbattendo i costi di trasporto fino al 20%.</p>
-                <a href="http://localhost:8501/" target="_blank" class="inline-block bg-white border border-slate-200 px-6 py-3 rounded-xl font-bold text-sm hover:shadow-md transition">Prova Demo →</a>
-            </div>
-
-            <div class="group bg-slate-50 p-10 rounded-[2rem] border border-transparent hover:border-green-500 hover:bg-white transition-all duration-500 shadow-sm">
-                <div class="text-4xl mb-6 group-hover:scale-110 transition inline-block">📅</div>
-                <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Pianificazione Task</h3>
-                <p class="text-slate-600 mb-8 leading-relaxed">Gestisci i turni e le attività del personale senza errori. Un'unica dashboard per il coordinamento totale del vivaio.</p>
-                <a href="#" class="inline-block bg-white border border-slate-200 px-6 py-3 rounded-xl font-bold text-sm hover:shadow-md transition">Prova Demo →</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="esperienza" class="bg-slate-900 text-white py-32 overflow-hidden">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid lg:grid-cols-5 gap-16 items-center">
-                
-                <div class="reveal lg:col-span-3">
-                    <h2 class="text-2xl md:text-3xl font-black mb-8 leading-tight uppercase tracking-tight">
-                        Dall'Ingegneria di precisione <br>all'Innovazione Locale.
-                    </h2>
-                    <div class="space-y-6 text-slate-400 text-lg">
-                        <p>
-                            Sono <span class="text-white font-bold">Samuele Cerquetelli</span>. Il mio approccio unisce il rigore tecnico acquisito come Design Safety Engineer in <span class="text-white">Hitachi Rail</span> alla ricerca d'avanguardia condotta a <span class="text-white font-medium">New York</span>.
-                        </p>
-                        <p>
-                            Ho presentato i miei lavori sulla sostenibilità urbana alla <span class="text-white">Princeton University</span> e pubblicato su riviste scientifiche internazionali. Questa competenza è lo strumento che uso per garantire che ogni automazione sia efficiente, sicura e proiettata al futuro.
-                        </p>
-                        <p>
-                            Ho a cuore il territorio e i vivai locali. La mia esperienza mi permette di progettare soluzioni che non solo migliorano il business, ma facilitano l'accesso a <span class="text-green-500 font-bold tracking-wide">fondi e bandi regionali per l'innovazione green e digitale</span>.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-2 flex flex-col items-center lg:items-end reveal">
-                    <div class="relative max-w-[340px] w-full">
-                        <div class="rounded-3xl overflow-hidden border-[6px] border-slate-800 shadow-2xl">
-                            <img id="gif-profilo" data-src="io1.gif" src="" alt="Samuele Cerquetelli" class="w-full object-cover aspect-square">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-24 text-center">
-        <p class="text-slate-400 font-bold uppercase text-xs tracking-widest mb-4">Parliamo del tuo prossimo progetto</p>
-        <a href="mailto:samuelecerquetelli11@gmail.com" class="text-2xl md:text-4xl font-black hover:text-green-600 transition break-all px-6">
-            samuelecerquetelli11@gmail.com
-        </a>
-        <p class="mt-16 text-xs text-slate-300 uppercase tracking-[0.3em]">© 2026 Samuele Cerquetelli Engineering</p>
-    </footer>
-
     <script>
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                    let gif = reveals[i].querySelector('#gif-profilo');
-                    if(gif && gif.getAttribute('src') == "") {
-                        gif.setAttribute('src', gif.getAttribute('data-src'));
-                    }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#1E9140', dark: '#15702f', light: '#22a44a', soft: '#e8f5ec' },
+                        ink:     { DEFAULT: '#0b1410', soft: '#1a2620' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    letterSpacing: { tightest: '-0.04em' }
                 }
             }
         }
-        window.addEventListener("scroll", reveal);
-        reveal();
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <style>
+        * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        html, body { background: #fff; color: #0b1410; font-family: 'Inter', sans-serif; }
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        ::selection { background: #1E9140; color: #fff; }
+
+        .mask-line { display: inline-block; overflow: hidden; vertical-align: bottom; line-height: 1; }
+        .mask-line > span { display: inline-block; will-change: transform; }
+
+        .gradient-text {
+            background: linear-gradient(120deg, #1E9140, #22a44a, #1E9140);
+            -webkit-background-clip: text; background-clip: text; color: transparent;
+        }
+
+        #cursor-leaf {
+            position: fixed; top: 0; left: 0;
+            width: 26px; height: 36px;
+            pointer-events: none; z-index: 9999;
+            transform: translate3d(-100px, -100px, 0);
+            will-change: transform;
+            transition: width .3s ease, height .3s ease;
+            filter: drop-shadow(0 2px 6px rgba(11,20,16,0.18));
+        }
+        #cursor-leaf svg { width: 100%; height: 100%; display: block; }
+        @media (hover: none), (max-width: 900px) { #cursor-leaf { display: none; } }
+        @media (hover: hover) and (min-width: 901px) { html, body, a, button { cursor: none; } }
+
+        .underline-grow { position: relative; }
+        .underline-grow::after {
+            content: ""; position: absolute; left: 0; bottom: -3px; width: 0; height: 1px;
+            background: currentColor; transition: width .4s ease;
+        }
+        .underline-grow:hover::after { width: 100%; }
+
+        .module-card {
+            transition: transform .5s cubic-bezier(0.22,1,0.36,1), border-color .5s, background .5s;
+            border: 1px solid rgba(11,20,16,0.08);
+        }
+        .module-card:hover {
+            transform: translateY(-4px);
+            border-color: #1E9140;
+            background: #f7faf8;
+        }
+
+        .problem-row {
+            border-top: 1px solid rgba(11,20,16,0.08);
+            transition: padding .4s, background .4s;
+        }
+        .problem-row:last-child { border-bottom: 1px solid rgba(11,20,16,0.08); }
+        .problem-row:hover { padding-left: 1.5rem; background: linear-gradient(90deg, rgba(30,145,64,0.05), transparent); }
+
+        /* Foglia "ponte" tra hero e problema */
+        .foglia-bridge-wrap {
+            position: relative;
+            height: 0;
+            z-index: 5;
+            pointer-events: none;
+        }
+        .foglia-bridge {
+            position: absolute;
+            top: -340px;     /* metà sopra (in hero), metà sotto (in problema) */
+            right: 6%;
+            width: 460px;
+            height: 600px;
+            object-fit: contain;
+            object-position: center;
+            will-change: transform;
+        }
+        @media (max-width: 1024px) { .foglia-bridge-wrap { display: none; } }
+        @supports (min-height: 100dvh) { #hero { min-height: 100dvh; } }
+
+        /* Focus visible per accessibilità tastiera */
+        :focus-visible {
+            outline: 2px solid #1E9140;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body class="bg-white text-ink antialiased overflow-x-hidden">
+
+    <div id="cursor-leaf" aria-hidden="true">
+        <svg viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 2 C 4 8, 1 24, 8 38 C 14 36, 23 28, 26 17 C 28 9, 22 3, 15 2 Z" fill="#1E9140"/>
+            <path d="M15 2 Q12 20 9 36" stroke="#15702f" stroke-width="0.9" fill="none" opacity="0.7" stroke-linecap="round"/>
+            <path d="M13 12 Q11 14 8 13" stroke="#15702f" stroke-width="0.6" fill="none" opacity="0.5"/>
+            <path d="M12 22 Q10 24 7 23" stroke="#15702f" stroke-width="0.6" fill="none" opacity="0.5"/>
+        </svg>
+    </div>
+
+
+    <!-- NAV -->
+    <nav aria-label="Navigazione principale" class="fixed top-0 inset-x-0 z-50 mix-blend-difference">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-6 flex justify-between items-center text-white">
+            <a href="#" class="font-black text-base tracking-tightest">vivaio<span class="text-primary-light">.</span>digitale</a>
+            <a href="#contatti" class="text-[11px] font-semibold uppercase tracking-[0.22em] underline-grow">Parliamone →</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-20 sm:pt-32 pb-14 sm:pb-20 overflow-hidden">
+
+        <!-- Sfondo soft -->
+        <div class="absolute inset-0"
+             style="background: radial-gradient(ellipse at 80% 20%, rgba(30,145,64,0.08), transparent 60%), radial-gradient(ellipse at 10% 90%, rgba(30,145,64,0.06), transparent 60%);"></div>
+
+        <!-- CONTENT -->
+        <div class="relative max-w-[1400px] mx-auto px-6 lg:px-12 w-full" style="z-index: 10;">
+            <div class="hero-eyebrow flex items-center gap-3 mb-10 text-[11px] font-semibold uppercase tracking-[0.28em] text-ink/55">
+                <span class="w-8 h-px bg-primary"></span>
+                <span>Distretto vivaistico di Pistoia</span>
+            </div>
+
+            <h1 class="text-[12vw] sm:text-[10vw] lg:text-[8vw] font-black leading-[0.92] tracking-tightest mb-8 sm:mb-12 max-w-[14ch]">
+                <span class="block mask-line"><span class="hero-line">Il gestionale</span></span>
+                <span class="block mask-line"><span class="hero-line">per i vivai</span></span>
+                <span class="block mask-line"><span class="hero-line gradient-text italic font-light">di Pistoia.</span></span>
+            </h1>
+
+            <div class="hero-cta flex flex-col sm:flex-row gap-3">
+                <a href="https://wa.me/393668030599?text=Ciao%20Samuele%2C%20vorrei%20saperne%20di%20pi%C3%B9%20su%20Vivaio%20Digitale."
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center justify-center gap-3 bg-ink text-white px-8 py-4 rounded-full font-semibold hover:bg-primary transition-colors duration-500">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Scrivimi su WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foglia ponte tra hero e problema -->
+    <div class="foglia-bridge-wrap" aria-hidden="true">
+        <img class="foglia-bridge" src="foglia.png" alt="" width="460" height="600">
+    </div>
+
+    <!-- PROBLEMA -->
+    <section id="problema" class="py-14 sm:py-24 lg:py-32 max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-20">
+            <div class="lg:col-span-5 fade-up">
+                <div class="text-[11px] font-semibold uppercase tracking-[0.3em] text-primary mb-6 flex items-center gap-3">
+                    <span class="w-6 h-px bg-primary"></span>01 — Il problema
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1] tracking-tightest">
+                    Oggi, sul campo,<br>
+                    il problema<br>
+                    <span class="italic font-light text-primary">non sono le piante.</span>
+                </h2>
+            </div>
+
+            <div class="lg:col-span-7">
+                <div class="problem-row problem-item py-6 flex gap-6 items-baseline">
+                    <span class="font-mono text-sm text-ink/30 w-8 shrink-0">01</span>
+                    <p class="text-base sm:text-xl lg:text-2xl font-medium tracking-tight">Cataloghi su Excel scollegati.</p>
+                </div>
+                <div class="problem-row problem-item py-6 flex gap-6 items-baseline">
+                    <span class="font-mono text-sm text-ink/30 w-8 shrink-0">02</span>
+                    <p class="text-base sm:text-xl lg:text-2xl font-medium tracking-tight">Preventivi compilati a mano, una lingua per volta.</p>
+                </div>
+                <div class="problem-row problem-item py-6 flex gap-6 items-baseline">
+                    <span class="font-mono text-sm text-ink/30 w-8 shrink-0">03</span>
+                    <p class="text-base sm:text-xl lg:text-2xl font-medium tracking-tight">Commissioni a voce. Foglietti che spariscono.</p>
+                </div>
+                <div class="problem-row problem-item py-6 flex gap-6 items-baseline">
+                    <span class="font-mono text-sm text-ink/30 w-8 shrink-0">04</span>
+                    <p class="text-base sm:text-xl lg:text-2xl font-medium tracking-tight">L'inventario tenuto a memoria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUZIONE -->
+    <section id="soluzione" class="bg-ink text-white py-14 sm:py-24 lg:py-32 relative overflow-hidden">
+        <div class="absolute -top-40 right-1/4 w-[500px] h-[500px] rounded-full opacity-20"
+             style="background: radial-gradient(circle, #1E9140, transparent 70%); filter: blur(60px);"></div>
+
+        <div class="relative max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="mb-10 sm:mb-16 max-w-3xl fade-up">
+                <div class="text-[11px] font-semibold uppercase tracking-[0.3em] text-primary-light mb-6 flex items-center gap-3">
+                    <span class="w-6 h-px bg-primary-light"></span>02 — Cosa fa
+                </div>
+                <h2 class="text-3xl sm:text-5xl lg:text-7xl font-black leading-[0.95] tracking-tightest">
+                    Dal campo all'ordine.<br>
+                    <span class="italic font-light text-white/55">In una piattaforma.</span>
+                </h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
+
+                <div class="module-card slide-in bg-ink p-6 sm:p-8 lg:p-10">
+                    <div class="flex justify-end items-center mb-10">
+                        <svg class="w-5 h-5 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 tracking-tight">Catalogo intelligente</h3>
+                    <p class="text-white/55 text-sm font-light leading-relaxed">Cerca a parole tue. Suggerisce in base allo storico cliente.</p>
+                </div>
+
+                <div class="module-card slide-in bg-ink p-6 sm:p-8 lg:p-10">
+                    <div class="flex justify-end items-center mb-10">
+                        <svg class="w-5 h-5 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 tracking-tight">Preventivi multilingua</h3>
+                    <p class="text-white/55 text-sm font-light leading-relaxed">PDF in tutte le lingue. Un clic.</p>
+                </div>
+
+                <div class="module-card slide-in bg-ink p-6 sm:p-8 lg:p-10">
+                    <div class="flex justify-end items-center mb-10">
+                        <svg class="w-5 h-5 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17h2l1-3h12l1 3h2"/><path d="M5 17v3a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-3M16 17v3a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-3"/><path d="M5 14V7a2 2 0 0 1 2-2h7v9"/><path d="M14 8h4l3 4v2"/></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 tracking-tight">Logistica</h3>
+                    <p class="text-white/55 text-sm font-light leading-relaxed">Carichi, percorsi, consegne. In ordine.</p>
+                </div>
+
+                <div class="module-card slide-in bg-ink p-6 sm:p-8 lg:p-10">
+                    <div class="flex justify-end items-center mb-10">
+                        <svg class="w-5 h-5 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 tracking-tight">Commissioni interne</h3>
+                    <p class="text-white/55 text-sm font-light leading-relaxed">Chi fa cosa, in chiaro.</p>
+                </div>
+
+                <div class="module-card slide-in bg-ink p-6 sm:p-8 lg:p-10">
+                    <div class="flex justify-end items-center mb-10">
+                        <svg class="w-5 h-5 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 tracking-tight">Inventario vocale</h3>
+                    <p class="text-white/55 text-sm font-light leading-relaxed">Parli, lui aggiorna.</p>
+                </div>
+
+                <div class="module-card slide-in bg-ink p-6 sm:p-8 lg:p-10">
+                    <div class="flex justify-end items-center mb-10">
+                        <svg class="w-5 h-5 text-primary-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 tracking-tight">Dati per i bandi green</h3>
+                    <p class="text-white/55 text-sm font-light leading-relaxed">Irrigazione, consumi. Numeri pronti per i finanziamenti.</p>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center mt-12">
+                <button id="open-demo" type="button"
+                    class="inline-flex items-center justify-center gap-3 bg-white/10 border border-white/20 text-white px-8 py-4 sm:px-10 sm:py-5 rounded-full font-semibold hover:bg-white hover:text-ink transition-all duration-500 text-base">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    Guarda la demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHI SONO -->
+    <section id="chi-sono" class="py-14 sm:py-24 lg:py-32 max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-12 gap-10 sm:gap-16 items-center">
+            <div class="lg:col-span-7 fade-up">
+                <div class="text-[11px] font-semibold uppercase tracking-[0.3em] text-primary mb-6 flex items-center gap-3">
+                    <span class="w-6 h-px bg-primary"></span>03 — Chi sono
+                </div>
+                <h2 class="text-[1.8rem] sm:text-4xl lg:text-6xl font-black leading-[1.05] sm:leading-[0.95] tracking-tightest mb-8">
+                    Samuele Cerquetelli.<br>
+                    <span class="italic font-light text-primary">Ingegnere ambientale.</span>
+                </h2>
+                <p class="text-ink/65 text-base sm:text-lg leading-relaxed font-light max-w-xl">
+                    Design Safety Engineer in <span class="text-ink font-medium">Hitachi Rail</span>, ricercatore a New York, relatore alla <span class="text-ink font-medium">Princeton University</span>. Ho imparato che nessuna tecnologia funziona se non parte da chi ci lavora davvero — per questo ascolto, e risolvo i problemi concreti di ogni giorno.
+                </p>
+            </div>
+
+            <div class="lg:col-span-5 fade-up">
+                <div class="relative max-w-[200px] mx-auto lg:ml-auto">
+                    <div class="absolute -inset-3 bg-primary/15 rounded-[2.5rem] -rotate-3"></div>
+                    <div class="relative rounded-[2rem] overflow-hidden bg-white aspect-square">
+                        <img id="profile-img" data-src="io1.webp" alt="Samuele Cerquetelli" class="w-full h-full object-cover object-top">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contatti" class="bg-ink text-white py-16 sm:py-24 lg:py-32 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full opacity-25"
+             style="background: radial-gradient(circle, #1E9140, transparent 70%); filter: blur(80px);"></div>
+
+        <div class="relative max-w-[1100px] mx-auto px-6 text-center">
+            <h2 class="fade-up text-[2.6rem] sm:text-6xl lg:text-8xl font-black leading-[1] sm:leading-[0.95] tracking-tightest mb-8 sm:mb-12">
+                Smetti di fare<br>
+                <span class="italic font-light text-white/60">tutto a mano.</span>
+            </h2>
+
+            <div class="fade-up flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
+                <a href="https://wa.me/393668030599?text=Ciao%20Samuele%2C%20vorrei%20saperne%20di%20pi%C3%B9%20su%20Vivaio%20Digitale."
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center justify-center gap-3 bg-primary text-white px-8 py-4 sm:px-10 sm:py-5 rounded-full font-semibold text-base sm:text-lg hover:bg-primary-light transition-colors duration-500">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    WhatsApp
+                </a>
+                <a href="mailto:info@vivaio-digitale.it" class="inline-flex items-center justify-center bg-transparent border border-white/20 px-8 py-4 sm:px-10 sm:py-5 rounded-full font-semibold text-sm sm:text-lg hover:border-white hover:bg-white hover:text-ink transition-all duration-500 break-all sm:break-normal">
+                    info@vivaio-digitale.it
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALE DEMO -->
+    <div id="demo-modal" role="dialog" aria-modal="true" aria-label="Demo Vivaio Digitale" class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8 opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true">
+        <div id="demo-backdrop" class="absolute inset-0 bg-black/85 backdrop-blur-sm"></div>
+        <div class="relative w-full max-w-5xl">
+            <button id="close-demo" type="button" aria-label="Chiudi la demo"
+                class="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors flex items-center gap-2 text-sm font-semibold uppercase tracking-widest">
+                <span>Chiudi</span>
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+            <video id="demo-video" src="demo.mp4" type="video/mp4" controls playsinline preload="none"
+                aria-label="Video demo di Vivaio Digitale"
+                class="w-full rounded-2xl shadow-2xl bg-black outline-none"></video>
+        </div>
+    </div>
+
+    <footer class="bg-ink text-white border-t border-white/10 py-8">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/40 uppercase tracking-[0.25em]">
+            <span class="font-black tracking-tightest text-sm text-white normal-case">vivaio<span class="text-primary-light">.</span>digitale</span>
+            <span>© 2026 Samuele Cerquetelli · Pistoia</span>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        let lenis = null;
+        if (typeof Lenis !== 'undefined') {
+            try {
+                lenis = new Lenis({
+                    duration: 1.15,
+                    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                    smoothWheel: true, smoothTouch: false
+                });
+                lenis.on('scroll', ScrollTrigger.update);
+                gsap.ticker.add((t) => lenis.raf(t * 1000));
+                gsap.ticker.lagSmoothing(0);
+            } catch(e) { lenis = null; }
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', (e) => {
+                const h = a.getAttribute('href');
+                if (h.length > 1 && document.querySelector(h)) {
+                    e.preventDefault();
+                    if (lenis) lenis.scrollTo(h, { offset: -20, duration: 1.4 });
+                    else document.querySelector(h).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Hero entrance
+        const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+        tl.from('.hero-eyebrow', { y: 20, opacity: 0, duration: 0.8 })
+          .from('.hero-line', { yPercent: 110, duration: 1.0, stagger: 0.1 }, '-=0.4')
+          .from('.hero-cta > *', { y: 20, opacity: 0, duration: 0.8, stagger: 0.1 }, '-=0.5');
+
+        // ===== Foglia ponte tra hero e problema (parallax leggero + rotazione) =====
+        gsap.fromTo('.foglia-bridge',
+            { y: 60, rotation: -6 },
+            {
+                y: -60, rotation: 6,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '.foglia-bridge-wrap',
+                    start: 'top bottom',  // entra in viewport
+                    end: 'bottom top',    // esce dal viewport
+                    scrub: 0.6
+                }
+            });
+
+        // Fade-up generici
+        gsap.utils.toArray('.fade-up').forEach(el => {
+            gsap.from(el, {
+                y: 40, opacity: 0, duration: 1.0, ease: 'power3.out',
+                scrollTrigger: { trigger: el, start: 'top 88%' }
+            });
+        });
+
+        // Problem rows stagger
+        gsap.from('.problem-item', {
+            y: 30, opacity: 0, duration: 0.8, stagger: 0.12, ease: 'power3.out',
+            scrollTrigger: { trigger: '#problema', start: 'top 70%' }
+        });
+
+        // Modules: row 1 together, row 2 together
+        const slideCards = gsap.utils.toArray('.slide-in');
+        gsap.from(slideCards.slice(0, 3), {
+            y: 40, opacity: 0, duration: 1.0, ease: 'power3.out',
+            scrollTrigger: { trigger: '#soluzione', start: 'top 65%' }
+        });
+        gsap.from(slideCards.slice(3), {
+            y: 40, opacity: 0, duration: 1.0, ease: 'power3.out', delay: 0.2,
+            scrollTrigger: { trigger: '#soluzione', start: 'top 65%' }
+        });
+
+        // Profile lazy
+        const pi = document.querySelector('#profile-img');
+        if (pi) {
+            ScrollTrigger.create({
+                trigger: pi, start: 'top 90%', once: true,
+                onEnter: () => {
+                    pi.setAttribute('src', pi.getAttribute('data-src'));
+                    pi.onload = () => ScrollTrigger.refresh();
+                }
+            });
+        }
+
+        // Cursor foglia
+        const leaf = document.querySelector('#cursor-leaf');
+        if (leaf && window.matchMedia('(hover: hover) and (min-width: 901px)').matches) {
+            let mx = -100, my = -100, x = -100, y = -100;
+            let lastX = -100, targetTilt = 0, tilt = 0;
+            const baseRot = 155;
+
+            window.addEventListener('mousemove', e => {
+                mx = e.clientX; my = e.clientY;
+                const dx = mx - lastX;
+                targetTilt = Math.max(-30, Math.min(30, dx * 1.4));
+                lastX = mx;
+            });
+
+            gsap.ticker.add(() => {
+                x += (mx - x) * 0.2;
+                y += (my - y) * 0.2;
+                tilt += (targetTilt - tilt) * 0.15;
+                targetTilt += (0 - targetTilt) * 0.08; // decay verso 0 quando il mouse si ferma
+                leaf.style.transform = `translate3d(${x - 8}px, ${y - 6}px, 0) rotate(${baseRot + tilt}deg)`;
+            });
+
+            document.querySelectorAll('a, button, .module-card, .problem-row').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    leaf.style.width = '38px';
+                    leaf.style.height = '52px';
+                });
+                el.addEventListener('mouseleave', () => {
+                    leaf.style.width = '26px';
+                    leaf.style.height = '36px';
+                });
+            });
+        }
+
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(() => ScrollTrigger.refresh());
+        }
+
+        // Demo modal
+        const modal = document.getElementById('demo-modal');
+        const video = document.getElementById('demo-video');
+        const openBtn = document.getElementById('open-demo');
+        const closeBtn = document.getElementById('close-demo');
+
+        function openDemo() {
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            video.play().catch(() => {});
+            closeBtn.focus();
+        }
+
+        function closeDemo() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            video.pause();
+            video.currentTime = 0;
+            openBtn.focus();
+        }
+
+        openBtn.addEventListener('click', openDemo);
+        closeBtn.addEventListener('click', closeDemo);
+        document.getElementById('demo-backdrop').addEventListener('click', closeDemo);
+        document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.classList.contains('pointer-events-none')) closeDemo(); });
+    </script>
 </body>
 </html>
